@@ -1,0 +1,10 @@
+
+psypy
+bitstring
+pylsl
+pygatt
+scikit-learn
+pandas
+numpy
+mne
+seaborn
