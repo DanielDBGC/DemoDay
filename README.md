@@ -4,12 +4,12 @@
 Este proyecto implementa un sistema de captura y sincronización de datos EEG en tiempo real utilizando **LSL (Lab Streaming Layer)** y BrainFlow. Consiste en un experimento donde se presentan estímulos visuales intermitentes (flickers) y se registran simultáneamente señales EEG y marcadores de eventos en archivos separados para su análisis posterior.
 
 ### Componentes Principales:
-1. **Emisor de Estímulos**:
+1. **Emisor de Estímulos** (`ssvepBarin.py`):
    - Presenta estímulos visuales con frecuencias específicas utilizando *Psychopy*.
    - Envia marcadores a un flujo LSL indicando el inicio de cada estímulo.
    - Transmite las señales EEG en tiempo real desde un dispositivo OpenBCI.
 
-2. **Listener de Datos**:
+2. **Listener de Datos** (`listener.py`):
    - Captura datos EEG y marcadores en flujos LSL separados.
    - Guarda los datos en archivos CSV (`eeg_data.csv` y `markers.csv`) para análisis offline.
 
